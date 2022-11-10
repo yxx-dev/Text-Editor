@@ -8,7 +8,7 @@ Deployment:
 NA
 
 ## Installation
-Node, Express, indexedDB/idb, webpack
+Node, Express, indexedDB/idb, webpack, service worker
 
 ## Usage
 For demonstration purpose only.
