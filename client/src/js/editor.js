@@ -18,6 +18,8 @@ export default class {
       lineNumbers: true,
       lineWrapping: true,
       autofocus: true,
+      autoCloseTags: true,
+      autoCloseBrackets: true,
       indentUnit: 2,
       tabSize: 2,
     });
@@ -27,6 +29,8 @@ export default class {
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
       this.editor.setValue(data || localData || header);
+      // this.editor.setValue(data || header);
+
     });
 
     this.editor.on('change', () => {
